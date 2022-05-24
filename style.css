@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@600&family=Carter+One&family=Kanit:wght@300&family=Roboto+Condensed&display=swap");
+
+* {
+  font-family: "Carter One", cursive;
+  color: white;
+}
+.background {
+  background-image: url(images/L1PLT0G.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+#h2 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.instruction {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.drum {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 10%;
+  border-color: white;
+  border-style: dotted;
+  padding: 2%;
+}
+.drum:hover {
+  cursor: pointer;
+  background-color: rgba(0, 255, 0, 0.5);
+}
