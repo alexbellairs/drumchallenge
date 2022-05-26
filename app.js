@@ -8,40 +8,40 @@ let snare = document.getElementById("snare");
 let tink = document.getElementById("tink");
 let tom = document.getElementById("tom");
 
-document.addEventListener("keypress", (keyValue) => {
-  if (keyValue.key == "a" || keyValue.key == "A") {
+document.addEventListener("keypress", (event) => {
+  if (event.key == "a" || event.key == "A") {
     boom.pause();
     boom.currentTime = 0;
     boom.play();
-  } else if (keyValue.key == "s" || keyValue.key == "S") {
+  } else if (event.key == "s" || event.key == "S") {
     clap.pause();
     clap.currentTime = 0;
     clap.play();
-  } else if (keyValue.key == "d" || keyValue.key == "D") {
+  } else if (event.key == "d" || event.key == "D") {
     hihat.pause();
     hihat.currentTime = 0;
     hihat.play();
-  } else if (keyValue.key == "f" || keyValue.key == "F") {
+  } else if (event.key == "f" || event.key == "F") {
     kick.pause();
     kick.currentTime = 0;
     kick.play();
-  } else if (keyValue.key == "g" || keyValue.key == "G") {
+  } else if (event.key == "g" || event.key == "G") {
     openhat.pause();
     openhat.currentTime = 0;
     openhat.play();
-  } else if (keyValue.key == "h" || keyValue.key == "H") {
+  } else if (event.key == "h" || event.key == "H") {
     ride.pause();
     ride.currentTime = 0;
     ride.play();
-  } else if (keyValue.key == "j" || keyValue.key == "J") {
+  } else if (event.key == "j" || event.key == "J") {
     snare.pause();
     snare.currentTime = 0;
     snare.play();
-  } else if (keyValue.key == "k" || keyValue.key == "K") {
+  } else if (event.key == "k" || event.key == "K") {
     tink.pause();
     tink.currentTime = 0;
     tink.play();
-  } else if (keyValue.key == "l" || keyValue.key == "L") {
+  } else if (event.key == "l" || event.key == "L") {
     tom.pause();
     tom.currentTime = 0;
     tom.play();
