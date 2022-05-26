@@ -8,6 +8,8 @@ let snare = document.getElementById("snare");
 let tink = document.getElementById("tink");
 let tom = document.getElementById("tom");
 
+let kbBtn = document.getElementsByClassName("kbBtn");
+
 document.addEventListener("keypress", (event) => {
   if (event.key == "a" || event.key == "A") {
     boom.pause();
@@ -45,6 +47,50 @@ document.addEventListener("keypress", (event) => {
     tom.pause();
     tom.currentTime = 0;
     tom.play();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "a" || e.key == "A") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "s" || e.key == "S") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "d" || e.key == "D") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "f" || e.key == "F") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "g" || e.key == "G") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "h" || e.key == "H") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "j" || e.key == "J") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "k" || e.key == "K") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  } else if (e.key == "l" || e.key == "L") {
+    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
+  }
+});
+
+document.addEventListener("keyup", (x) => {
+  if (x.key == "a" || x.key == "A") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "s" || x.key == "S") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "d" || x.key == "D") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "f" || x.key == "F") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "g" || x.key == "G") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "h" || x.key == "H") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "j" || x.key == "J") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "k" || x.key == "K") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  } else if (x.key == "l" || x.key == "L") {
+    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   }
 });
 
