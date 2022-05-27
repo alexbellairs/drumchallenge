@@ -60,10 +60,14 @@ button:hover {
 }
 .keyboardButton {
   background-color: rgba(0, 0, 0, 0.5);
+  transition: box-shadow;
 }
 .keyboardButton:active {
   background-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 50px white;
 }
 .active {
   background-color: rgba(255, 0, 255, 0.5);
+  transition: box-shadow;
+  box-shadow: 0 0 50px white;
 }
