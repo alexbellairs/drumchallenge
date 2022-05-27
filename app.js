@@ -8,89 +8,59 @@ let snare = document.getElementById("snare");
 let tink = document.getElementById("tink");
 let tom = document.getElementById("tom");
 
-let kbBtn = document.getElementsByClassName("kbBtn");
+const changeColour = (element) => {
+  element.classList.add("active");
+  setTimeout(() => {
+    element.classList.remove("active");
+  }, 100);
+};
 
 document.addEventListener("keypress", (event) => {
   if (event.key == "a" || event.key == "A") {
     boom.pause();
     boom.currentTime = 0;
+    changeColour(boomDrum);
     boom.play();
   } else if (event.key == "s" || event.key == "S") {
     clap.pause();
     clap.currentTime = 0;
+    changeColour(clapDrum);
     clap.play();
   } else if (event.key == "d" || event.key == "D") {
     hihat.pause();
     hihat.currentTime = 0;
+    changeColour(hihatDrum);
     hihat.play();
   } else if (event.key == "f" || event.key == "F") {
     kick.pause();
     kick.currentTime = 0;
+    changeColour(kickDrum);
     kick.play();
   } else if (event.key == "g" || event.key == "G") {
     openhat.pause();
     openhat.currentTime = 0;
+    changeColour(openhatDrum);
     openhat.play();
   } else if (event.key == "h" || event.key == "H") {
     ride.pause();
     ride.currentTime = 0;
+    changeColour(rideDrum);
     ride.play();
   } else if (event.key == "j" || event.key == "J") {
     snare.pause();
     snare.currentTime = 0;
+    changeColour(snareDrum);
     snare.play();
   } else if (event.key == "k" || event.key == "K") {
     tink.pause();
     tink.currentTime = 0;
+    changeColour(tinkDrum);
     tink.play();
   } else if (event.key == "l" || event.key == "L") {
     tom.pause();
     tom.currentTime = 0;
+    changeColour(tomDrum);
     tom.play();
-  }
-});
-
-document.addEventListener("keydown", (e) => {
-  if (e.key == "a" || e.key == "A") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "s" || e.key == "S") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "d" || e.key == "D") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "f" || e.key == "F") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "g" || e.key == "G") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "h" || e.key == "H") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "j" || e.key == "J") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "k" || e.key == "K") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  } else if (e.key == "l" || e.key == "L") {
-    kbBtn.style.backgroundColor = "rgba(255, 0, 255, 0.5);";
-  }
-});
-
-document.addEventListener("keyup", (x) => {
-  if (x.key == "a" || x.key == "A") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "s" || x.key == "S") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "d" || x.key == "D") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "f" || x.key == "F") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "g" || x.key == "G") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "h" || x.key == "H") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "j" || x.key == "J") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "k" || x.key == "K") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  } else if (x.key == "l" || x.key == "L") {
-    kbBtn.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   }
 });
 

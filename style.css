@@ -64,3 +64,6 @@ button:hover {
 .keyboardButton:active {
   background-color: rgba(255, 0, 255, 0.5);
 }
+.active {
+  background-color: rgba(255, 0, 255, 0.5);
+}
